@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--middle);
+}
+
+.appContainer {
+  min-height: 100vh;
+  font-family: var(--text);
+  font-size: 20px;
+  margin: 10px;
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--title);
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    line-height: 10rem;
+    margin: 0;
+  }
+
+  .accent {
+    color: var(--extralight);
+  }
+
+  a,
+  &:visited,
+  &:focus {
+    color: var(--middle);
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+
+    &:hover {
+      color: var(--lightmiddle);
+      transition: ease-in-out 0.5s;
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 10%;
+    .title {
+      text-decoration: underline overline var(--extralight);
+    }
+
+    .backArrow,
+    .nextArrow {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+
+      i {
+        font-size: 3rem;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          color: var(--extralight);
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .dataContainer {
+    margin-top: 20px;
+
+    .smallTxt {
+    }
+  }
+}
